@@ -21,10 +21,12 @@ st.markdown("""
 # UI page configuration-----------------------------------
 st.set_page_config(
     page_title="RGB to Grayscale Converter",
-    page_icon="🖼️",
     layout="centered",
 )
-st.title("🖼️ RGB to Grayscale Converter")
+image_url="https://raw.githubusercontent.com/PrajapatiPramodPandit/Rgbtograyconverter/refs/heads/main/rgbtogray.ico"
+with st.container(horizontal_alignment="center"):
+     st.image(image_url, width=200)
+st.title(" RGB to Grayscale Converter")
 st.write("Upload an RGB image to convert it to grayscale.")
 
 # image file uploader---------------------------------------
